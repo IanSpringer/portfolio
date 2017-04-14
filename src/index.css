@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+}
+h1{
+
+}
+h2{
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 6px
+}
+h4{
+  letter-spacing: 3px;
+}
+p{
+  letter-spacing: 2px;
+  line-height: 22px;
+}
+.hamburger{
+  text-align: right;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+.line{
+  width: 25px;
+  height: 2px;
+  background:#53efd6;;
+}
+.line-1, .line-2{
+  margin-bottom: 6px;
+}
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  -webkit-transition: all 2s ease;
+}
+.section{
+  overflow: auto;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.fa{
+  margin-right: 90px;
+  margin-left: 70px;
+  font-size: 30px;
+}
+.one{
+  height: 650px;
+  width: 100%;
+  background: #0e1e38;
+  color: #ff4949;
+}
+.one .wrapper{
+  text-align: center;
+}
+.text-wrapper{
+  margin-top: 250px;
+}
+.one h2{
+}
+.one h4{
+ margin-top: 40px;
+ margin-bottom: 40px;
+}
+.fa-social{
+  display: inline-block;
+  margin: 0px 50px;
+}
+.two{
+  background-image: url('../assets/pf-city-dark.jpg');
+  width: 100%;
+  padding: 180px 0px;
+  height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two p{
+    line-height: 46px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.three{
+
+}
+.work-wrapper{
+  width: 33.332%;
+  /*float: left;*/
+  display: inline-block;
+}
+.work-section{
+  padding: 50px;
+  background: #0e1e38;
+}
+.work-section h2{
+  color: #ff4949;
+  text-align: center;
+}
+.portfolio-col{
+  float: left;
+  display: inline-block;
+  width: 100%
+}
+.sites-wrapper .site-img{
+  float: left;
+  display: inline-block;
+  width: 33.332%;
+}
+.apps-wrapper{
+  clear: both;
+  display: block;
+}
+.apps-wrapper .app-img{
+  width: 33.332%;
+}
+.apps-wrapper{
+
+}
+.number-two{
+  margin-left: 0%;
+}
+.four{
+
+  padding: 130px 0px;
+  background-image: url('../assets/mountain.jpg');
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four h2{
+  color: white;
+  text-align: center;
+    margin-bottom: 50px;
+}
+.expert-col{
+  text-align: center;
+  color: white;
+  width: 30%;
+  float: left;
+  display: inline-block;
+}
+.fa-mobile, .fa-code, .fa-cloud{
+  font-size: 70px;
+  color: #53efd6;
+}
+.expert-col h3{
+  font-size: 24px;
+  letter-spacing: 4px;
+
+}
+.expert-col-1, .expert-col-2{
+  margin-right: 5%;
+}
+.five{
+  padding: 130px 0px;
+  background: #0e1e38;
+  color: #ff4949;
+}
+.invisible{
+  opacity: 0;
+  y: -80px;
+}
+.fadeUp{
+  opacity: 1;
+  y: 0px;
+}
