@@ -23,7 +23,7 @@ class App extends Component {
             <div className="line line-3"></div>
           </div>
           <One className="one section"/>
-          <Two className="two section" />
+          <Two className="two section parallax" />
           <Three className="three section" />
           <Four className="four section" />
           <Five className="five section" />

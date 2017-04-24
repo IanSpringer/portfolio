@@ -24,9 +24,11 @@ class Two extends Component{
   render(){
     return(
       <div className={this.props.className}>
-        <div className={'wrapper ' + this.state.fadeUp}>
-          <p>Hi, I'm Ian. I make cool stuff for the web. Check out some of my recent work.</p>
-      </div>
+          <div className={'wrapper ' + this.state.fadeUp}>
+            <p>Hi, I'm Ian. I'm a southern California based web developer and designer. Since graduating of General Assembly' "Web Development Immersive
+             bootcamp in May of 2016, I have worked professionally as a front end focused developer in an agency setting. I specialize in front end development, CSS animations, Javascript and its many frameworks, eCommerce, SEO, and responsive design.</p>
+          </div>
+
       </div>
 
     )

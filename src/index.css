@@ -47,7 +47,7 @@ p{
 }
 .fa{
   margin-right: 90px;
-  margin-left: 70px;
+  margin-left: 90px;
   font-size: 30px;
 }
 .one{
@@ -87,18 +87,19 @@ p{
 .two p{
     line-height: 46px;
     color: white;
-    font-size: 32px;
+    font-size: 22px;
     text-align: center;
     width: 70%;
     margin: 0 auto;
 }
 .three{
-
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0px 70px 0px;
 }
-.work-wrapper{
-  width: 33.332%;
-  /*float: left;*/
-  display: inline-block;
+.three > h1{
+  text-align: center;
+  padding: 0px 0px;
 }
 .work-section{
   padding: 50px;
@@ -114,16 +115,28 @@ p{
   width: 100%
 }
 .sites-wrapper .site-img{
+   opacity: 0;
   float: left;
   display: inline-block;
   width: 33.332%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  transform: translate(0px, 70px);
 }
 .apps-wrapper{
   clear: both;
   display: block;
 }
 .apps-wrapper .app-img{
+  opacity: 0;
   width: 33.332%;
+    -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  transform: translate(0px, 70px);
+}
+.workFade{
+  opacity: 1 !important;
+  transform: translate(0px, 0px) !important;
 }
 .apps-wrapper{
 
@@ -133,9 +146,9 @@ p{
 }
 .four{
 
-  padding: 130px 0px;
+  padding: 130px 0px 0px 0px;
   background-image: url('../assets/mountain.jpg');
-    height: 100%;
+    height: 900px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -151,26 +164,148 @@ p{
 .expert-col{
   text-align: center;
   color: white;
-  width: 30%;
+  width: 49%;
   float: left;
+  height: auto;
   display: inline-block;
+  padding: 60px 0px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  -webkit-transition: all .6s ease;
+  height: 200px;
+  position: relative;
 }
-.fa-mobile, .fa-code, .fa-cloud{
+.four .wrapper{
+  width: 900px;
+  position: relative;
+}
+.expert-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+.expert-col2{
+  border-right: 1px solid rgba(255, 255, 255, .25);
+  border-left: 0px;
+}
+.expert-col2 h3{
+  margin-top: 8px;
+}
+.expert-col4{
+  border-left: 0px;
+}
+.fa-mobile, .fa-code, .fa-cloud, .fa-cog{
   font-size: 70px;
   color: #53efd6;
+}
+.fa-mobile{
+  font-size: 122px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .expert-col h3{
   font-size: 24px;
   letter-spacing: 4px;
+}
+.expert-col p{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0px;
+  opacity: 0;
+  -webkit-transition: all 1.3s ease;
+  transition: all .3s ease;
+}
+.clickedfalse{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    -webkit-transition: width 1s, height 1s,  font-size 1s, opacity 1s;
+    -moz-transition: width 1s, height 1s, margin 1s, font-size 1s, opacity 1s;
+    -ms-transition: width 1s, height 1s, margin 1s, font-size 1s, opacity 1s;
+    transition: width 1s, height 1s, margin 1s, font-size 1s, opacity 1s;
 
 }
-.expert-col-1, .expert-col-2{
-  margin-right: 5%;
+.clickedtrue{
+  height: 100%;
+  width: 100%;
+  display: block;
+  /*position: absolute;*/
+  opacity: 1;
+  /*background: blue;*/
+  /*animation: mymove 1s ease;*/
+}
+.js-logo{
+  width: 27%;
+  margin-top: -5px;
+  margin-bottom: 4px;
+}
+
+.middle{
+  border-left: 0px;
+  border-right: 0px;
+}
+.expert-col:hover{
+  background: rgba(255, 255, 255, .2);
+}
+.expert-col3{
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
 .five{
   padding: 130px 0px;
   background: #0e1e38;
   color: #ff4949;
+}
+.fade-away{
+  opacity: 0;
+  /*display: none;*/
+}
+.expandtrue{
+  height: 320px;
+  background: rgba(255, 255, 255, .2);
+}
+.exper-col1.expandtrue{
+  transform: translate(52%, 5%);
+}
+.exper-col2.expandtrue{
+  transform: translate(-48%, -15%);
+  margin-top: 97px;
+}
+.exper-col3.expandtrue{
+  -webkit-transform: translate(50%, -65%);
+  transform: translate(52%, -65%);
+}
+.exper-col4.expandtrue{
+  transform: translate(-48%, -65%);
+}
+.seePtrue{
+  opacity: 1 !important;
+  font-size: 16px !important;
+}
+.close-btn{
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+.close-not-active{
+  margin-left: -20px;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.close-active{
+  width: 200px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px 0px;
 }
 .invisible{
   opacity: 0;
