@@ -2,26 +2,36 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-align: left;
 }
 h1{
-
+  font-weight: 100;
+}
+h3{
+  font-weight: 100;
 }
 h2{
   font-size: 40px;
   margin: 0;
-  letter-spacing: 6px
+  letter-spacing: 4px;
+  font-weight: 100;
 }
 h4{
   letter-spacing: 3px;
+  font-weight: 100;
 }
 p{
   letter-spacing: 2px;
   line-height: 22px;
+  font-weight: 100;
+}
+a{
+  color: #ff4949;
 }
 .hamburger{
+  display: none;
   text-align: right;
   position: fixed;
   right: 30px;
@@ -38,16 +48,14 @@ p{
 .wrapper{
   width: 1000px;
   margin: 0 auto;
-  -webkit-transition: all 2s ease;
-}
+/*  -webkit-transition: all 2s ease;
+*/}
 .section{
   overflow: auto;
   max-width: 1800px;
   margin: 0 auto;
 }
 .fa{
-  margin-right: 90px;
-  margin-left: 90px;
   font-size: 30px;
 }
 .one{
@@ -93,12 +101,11 @@ p{
     margin: 0 auto;
 }
 .three{
-  width: 1000px;
   margin: 0 auto;
-  padding: 40px 0px 70px 0px;
+  padding: 130px 0px 70px 0px;
 }
-.three > h1{
-  text-align: center;
+.three  h1{
+  text-align: center !important;
   padding: 0px 0px;
 }
 .work-section{
@@ -122,10 +129,15 @@ p{
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   transform: translate(0px, 70px);
+  cursor: pointer;
+}
+.sites-wrapper .site-four{
+  clear: both;
 }
 .apps-wrapper{
   clear: both;
   display: block;
+  padding-bottom: 60px;
 }
 .apps-wrapper .app-img{
   opacity: 0;
@@ -133,6 +145,8 @@ p{
     -webkit-transition: all .5s ease;
   transition: all .5s ease;
   transform: translate(0px, 70px);
+  height: 326px;
+  cursor: pointer;
 }
 .workFade{
   opacity: 1 !important;
@@ -145,16 +159,15 @@ p{
   margin-left: 0%;
 }
 .four{
-
+  clear: both;
   padding: 130px 0px 0px 0px;
   background-image: url('../assets/mountain.jpg');
-    height: 900px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 900px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .four h2{
   color: white;
@@ -173,6 +186,7 @@ p{
   -webkit-transition: all .6s ease;
   height: 200px;
   position: relative;
+  cursor: pointer;
 }
 .four .wrapper{
   width: 900px;
@@ -227,17 +241,13 @@ p{
   height: 100%;
   width: 100%;
   display: block;
-  /*position: absolute;*/
   opacity: 1;
-  /*background: blue;*/
-  /*animation: mymove 1s ease;*/
 }
 .js-logo{
-  width: 27%;
+  width: 34%;
   margin-top: -5px;
   margin-bottom: 4px;
 }
-
 .middle{
   border-left: 0px;
   border-right: 0px;
@@ -249,13 +259,36 @@ p{
   border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
 .five{
-  padding: 130px 0px;
+  padding: 60px 0px;
   background: #0e1e38;
   color: #ff4949;
 }
+.five h2{
+  float: left;
+  padding-top: 30px;
+}
+.five .fa{
+  margin-right: 10px;
+  color: ;
+  margin-bottom: 10px;
+  font-size: 20px
+}
+.five .fa-mobile{
+  font-size: 26px;
+  margin-left: 2px;
+}
+.five a{
+  color: #53efd6;
+  text-decoration: none
+}
+.contact-col{
+  width: 50%;
+  float: right;
+  list-style: none;
+  color: #53efd6;
+}
 .fade-away{
   opacity: 0;
-  /*display: none;*/
 }
 .expandtrue{
   height: 320px;
@@ -285,6 +318,8 @@ p{
   position: absolute;
   top: 0px;
   left: 30px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .close-not-active{
   margin-left: -20px;
@@ -307,14 +342,95 @@ p{
   margin: 0 auto;
   padding: 10px 0px;
 }
+.close-active:hover{
+  /*background: rgba(255, 255, 255, .3);*/
+  cursor: pointer;
+}
 .invisible{
   opacity: 0;
   y: -80px;
 }
 .fadeUp{
+  -webkit-transition: opacity .5s ease;
   opacity: 1;
   y: 0px;
 }
 .fa-cloud, .fa-cog{
   margin-top: 30px;
+}
+@media(max-width: 1050px){
+  .wrapper{
+    width: 750px;
+  }
+  .four .wrapper{
+    width: auto;
+  }
+}
+@media(max-width: 768px){
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .two p{
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .site-img, .app-img{
+    width: 100% !important;
+  }
+  .expert-col{
+    padding: 0px;
+  }
+  .four{
+    height: 700px;
+  }
+  .fa-mobile{
+    font-size: 60px;
+  }
+  .fa-mobile, .fa-cloud, .fa-cog{
+    margin-top: 30px;
+  }
+  .fa-cog, .fa-cloud{
+    font-size: 50px;
+  }
+  .expert-col h3{
+    font-size: 18px;
+  }
+  .js-logo{
+    width: 60px;
+    margin-top: 24px;
+  }
+  .exper-col1.expandtrue{
+    position: absolute;
+    width: 95%;
+    -webkit-transform: translate(-8%, 10%);
+    -ms-transform: translate(-8%, 10%);
+    transform: translate(-8%, 10%);
+    padding-bottom: 40px;
+  }
+  .exper-col2.expandtrue{
+    position: absolute;
+    width: 95%;
+    margin-top: 0px;
+    -webkit-transform: translate(-50%, 10%);
+    -ms-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
+    padding-bottom: 60px;
+  }
+  .exper-col3.expandtrue{
+    position: absolute;
+    -webkit-transform: translate(-91%, 10%);
+    -ms-transform: translate(-91%, 10%);
+    transform: translate(-91%, 10%);
+    width: 95%;
+    padding-bottom: 60px;
+  }
+  .exper-col4.expandtrue{
+    position: absolute;
+    -webkit-transform: translate(-91%, 10%);
+    -ms-transform: translate(-91%, 10%);
+    transform: translate(-91%, 10%);
+    width: 95%;
+  }
 }

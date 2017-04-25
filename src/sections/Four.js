@@ -11,7 +11,7 @@ class Four extends Component{
       {
       id: 1,
       title: "Responsive Design",
-      text: " clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. In fact, this website was built using React!",
+      text: " If your site or application is not mobile friendly, it won't compete in today's market place. I am very skilled at finding efficient ways to place content so that it fits on all devices.",
       icon: <i className="fa fa-mobile" aria-hidden="true"></i>,
       reduced: false,
       expand: false,
@@ -20,7 +20,7 @@ class Four extends Component{
       {
       id: 2,
       title: "Javascript",
-      text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. In fact, this website was built using React!",
+      text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. This site was built using React.js and Node.js",
       icon: <img className="js-logo" src={jsLogo} />,
       reduced: false,
       expand: false,
@@ -29,7 +29,7 @@ class Four extends Component{
       {
       id: 3,
       title: "Animations",
-      text: " clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. In fact, this website was built using React!",
+      text: "Animations can help bring a site to life, giving the user visual cues as to how the site functions. I employ CSS transitions and transformations to highten the visual aesthetic and grab the user's attention.",
       icon: <i className="fa fa-cog" aria-hidden="true"></i>,
       reduced: false,
       expand: false,
@@ -38,7 +38,7 @@ class Four extends Component{
       {
       id: 4,
       title: "Devops",
-      text: " I am well trained in deploying sites live, setting up sandbox and staging environments, and using version control tools such as git, github, and bitbucket.",
+      text: " I am well trained in deploying sites live, setting up sandbox and staging environments, and using useful command tools such as git, SSH, and FTP.",
       icon: <i className="fa fa-cloud" aria-hidden="true"></i>,
       reduced: false,
       expand: false,
