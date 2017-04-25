@@ -315,3 +315,6 @@ p{
   opacity: 1;
   y: 0px;
 }
+.fa-cloud, .fa-cog{
+  margin-top: 30px;
+}
