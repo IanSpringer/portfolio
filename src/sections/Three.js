@@ -43,7 +43,8 @@ class Three extends Component{
     console.log(document.documentElement.offsetHeight )
     const workFade = this.state.workFade
     return(
-      <div className="wrapper three">
+      <div className="section three">
+        <div className="wrapper">
           <h1>Work Porftolio</h1>
           <div className="sites-wrapper portfolio-col">
             <h3>Websites</h3>
@@ -57,6 +58,7 @@ class Three extends Component{
               <a href="http://stick2it.org"><img className={"app-img app-img " + workFade[4]} src={Stick} /></a>
               <a href="http://roomerresume.com"><img className={"app-img app-img " + workFade[5]} src={rr} /></a>
           </div>
+        </div>
       </div>
     )
   }
