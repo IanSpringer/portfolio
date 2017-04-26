@@ -61,8 +61,10 @@ a{
 .one{
   height: 650px;
   width: 100%;
-  background: #0e1e38;
+  /*background: #0e1e38;*/
   color: #ff4949;
+  background: -webkit-linear-gradient( #0e1e38, #485563);
+    background: linear-gradient( #0e1e38, #485563);
 }
 .one .wrapper{
   text-align: center;
@@ -81,18 +83,18 @@ a{
   margin: 0px 50px;
 }
 .two{
-  /*background-image: url('../assets/pf-city-dark.jpg');*/
+  background-image: url('../assets/pf-city-dark.jpg');
   width: 100%;
   padding: 180px 0px;
   height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
-    background: #485563;  /* fallback for old browsers */
-    background: -webkit-linear-gradient( #0e1e38, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient( #0e1e38, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #485563;   fallback for old browsers */
+  /*  background: -webkit-linear-gradient( #0e1e38, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient( #0e1e38, #485563);*/
 
 }
 .two p{
