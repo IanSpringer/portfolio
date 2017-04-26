@@ -114,7 +114,7 @@ class Four extends Component{
     return(
       <div className={this.props.className}>
         <div className="wrapper parallax">
-          <h2>Expertise</h2>
+          <h1>Expertise</h1>
           <h5 className={this.state.closeActive} onClick={this.handleCloseClick}>Back</h5>
           <div className="expert-wrapper">
           {attrs.map(function(obj, index){
