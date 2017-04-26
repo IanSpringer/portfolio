@@ -161,13 +161,14 @@ a{
 .four{
   clear: both;
   padding: 130px 0px 0px 0px;
-  background-image: url('../assets/mountain.jpg');
+  /*background-image: url('../assets/mountain.jpg');*/
   height: 900px;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+/*  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background: linear-gradient(#141E30, #243B55);
 }
 .four h2{
   color: white;
@@ -385,7 +386,8 @@ a{
     padding: 0px;
   }
   .four{
-    height: 700px;
+    height: auto;
+    padding-bottom: 40px;
   }
   .fa-mobile{
     font-size: 60px;
@@ -403,38 +405,52 @@ a{
     width: 60px;
     margin-top: 24px;
   }
+  .expert-col{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .exper-col1.expandtrue, .exper-col2.expandtrue, .exper-col3.expandtrue, .exper-col4.expandtrue{
+    margin-top: 0px;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+  .fade-away{
+    border-left: 1px solid rgba(255, 255, 255, .25);
+    opacity: 1;
+  }
+  .expert-wrapper{
+    margin-top: 40px;
+  }
   .exper-col1.expandtrue{
-    position: absolute;
-    width: 95%;
-    -webkit-transform: translate(-8%, 10%);
-    -ms-transform: translate(-8%, 10%);
-    transform: translate(-8%, 10%);
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   .exper-col2.expandtrue{
-    position: absolute;
-    width: 95%;
-    margin-top: 0px;
-    -webkit-transform: translate(-50%, 10%);
-    -ms-transform: translate(-50%, 10%);
-    transform: translate(-50%, 10%);
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
-  .exper-col3.expandtrue{
-    position: absolute;
-    -webkit-transform: translate(-91%, 10%);
-    -ms-transform: translate(-91%, 10%);
-    transform: translate(-91%, 10%);
-    width: 95%;
-    padding-bottom: 60px;
+  .seePtrue{
+    font-size: 12px !important;
   }
-  .exper-col4.expandtrue{
+  .expandtrue{
+    height: auto;
+  }
+  /*.exper-col3.expandtrue{
     position: absolute;
     -webkit-transform: translate(-91%, 10%);
     -ms-transform: translate(-91%, 10%);
     transform: translate(-91%, 10%);
     width: 95%;
-  }
+    padding-bottom: 60px;
+  }*/
+/*  .exper-col4.expandtrue{
+    position: absolute;
+    -webkit-transform: translate(-91%, 10%);
+    -ms-transform: translate(-91%, 10%);
+    transform: translate(-91%, 10%);
+    width: 95%;
+  }*/
   .five h2, .contact-col{
     float: none;
     width: 100%;
