@@ -265,7 +265,7 @@ a{
   /*color: #ff4949;*/
 }
 .five h2{
-  float: left;
+
   padding-top: 30px;
 }
 .five .fa{
@@ -285,8 +285,6 @@ a{
   font-weight: 800;
 }
 .contact-col{
-  width: 50%;
-  float: right;
   list-style: none;
   color: #53efd6;
 }
