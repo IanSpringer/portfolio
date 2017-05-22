@@ -51,61 +51,67 @@ class Four extends Component{
     this.handleCloseClick = this.handleCloseClick.bind(this)
   }
   handleClick(e){
-    const elements = this.state.attrs
-    elements.map(function(element){
-      if (element.id === e) {
-        element.reduced = false;
-        element.expand = true;
-        element.seeP = true;
-      } else {
-        element.reduced = true;
-      }
-    })
-    this.setState({attrs: elements, closeActive: "close-active"})
+    console.log(e)
+    if((this.state.attrs[e - 1].expand === false) && (this.state.attrs[e - 1].reduced === false)){
+      console.log("yay")
+      const elements = this.state.attrs
+      elements.map(function(element){
+        if (element.id === e) {
+          element.reduced = false;
+          element.expand = true;
+          element.seeP = true;
+        } else {
+          element.reduced = true;
+        }
+      })
+      this.setState({attrs: elements, closeActive: "close-active"})
+    }else if(this.state.attrs[e - 1].expand === true){
+      console.log("nay")
+      this.setState({
+        closeActive: "close-not-active",
+         attrs: [
+        {
+        id: 1,
+        title: "Responsive Design",
+        text: " If your site or application is not mobile friendly, it won't compete in today's market place. I am very skilled at finding efficient ways to place content so that it fits on all devices.",
+        icon: <i className="fa fa-mobile" aria-hidden="true"></i>,
+        reduced: false,
+        expand: false,
+        seeP: false
+        },
+        {
+        id: 2,
+        title: "Javascript",
+        text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. This site was built using React.js and Node.js",
+        icon: <img className="js-logo" src={jsLogo} />,
+        reduced: false,
+        expand: false,
+        seeP: false
+        },
+        {
+        id: 3,
+        title: "Animations",
+        text: "Animations can help bring a site to life, giving the user visual cues as to how the site functions. I employ CSS transitions and transformations to highten the visual aesthetic and grab the user's attention.",
+        icon: <i className="fa fa-cog" aria-hidden="true"></i>,
+        reduced: false,
+        expand: false,
+        seeP: false
+        },
+        {
+        id: 4,
+        title: "Devops",
+        text: " I am well trained in deploying sites live, setting up sandbox and staging environments, and using useful command tools such as git, SSH, and FTP.",
+        icon: <i className="fa fa-cloud" aria-hidden="true"></i>,
+        reduced: false,
+        expand: false,
+        seeP: false
+        }
+      ]
+      })
+    }
   }
   handleCloseClick(){
-    console.log("clickek")
-    this.setState({
-      closeActive: "close-not-active",
-       attrs: [
-      {
-      id: 1,
-      title: "Responsive Design",
-      text: " If your site or application is not mobile friendly, it won't compete in today's market place. I am very skilled at finding efficient ways to place content so that it fits on all devices.",
-      icon: <i className="fa fa-mobile" aria-hidden="true"></i>,
-      reduced: false,
-      expand: false,
-      seeP: false
-      },
-      {
-      id: 2,
-      title: "Javascript",
-      text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. This site was built using React.js and Node.js",
-      icon: <img className="js-logo" src={jsLogo} />,
-      reduced: false,
-      expand: false,
-      seeP: false
-      },
-      {
-      id: 3,
-      title: "Animations",
-      text: "Animations can help bring a site to life, giving the user visual cues as to how the site functions. I employ CSS transitions and transformations to highten the visual aesthetic and grab the user's attention.",
-      icon: <i className="fa fa-cog" aria-hidden="true"></i>,
-      reduced: false,
-      expand: false,
-      seeP: false
-      },
-      {
-      id: 4,
-      title: "Devops",
-      text: " I am well trained in deploying sites live, setting up sandbox and staging environments, and using useful command tools such as git, SSH, and FTP.",
-      icon: <i className="fa fa-cloud" aria-hidden="true"></i>,
-      reduced: false,
-      expand: false,
-      seeP: false
-      }
-    ]
-    })
+    console.log("hmm")
   }
 
   render(){
@@ -115,7 +121,6 @@ class Four extends Component{
       <div className={this.props.className}>
         <div className="wrapper parallax">
           <h1>Expertise</h1>
-          <h5 className={this.state.closeActive} onClick={this.handleCloseClick}>Back</h5>
           <div className="expert-wrapper">
           {attrs.map(function(obj, index){
             var myVar = index + 1;

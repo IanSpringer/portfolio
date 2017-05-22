@@ -309,11 +309,12 @@ a{
 .exper-col2.expandtrue{
   transform: translate(-48%, -15%);
   margin-top: 97px;
-  padding-bottom: 120px;
+  padding-bottom: 160px;
 }
 .exper-col3.expandtrue{
   -webkit-transform: translate(50%, -65%);
   transform: translate(52%, -65%);
+  padding-bottom: 100px;
 }
 .exper-col4.expandtrue{
   transform: translate(-48%, -65%);
@@ -383,7 +384,7 @@ a{
   }
   .two p{
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
   }
   .site-img, .app-img{
@@ -433,9 +434,15 @@ a{
     margin-top: 40px;
   }
   .exper-col1.expandtrue{
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
   .exper-col2.expandtrue{
+    padding-bottom: 30px;
+  }
+  .exper-col3.expandtrue{
+    padding-bottom: 50px;
+  }
+  .exper-col4.expandtrue{
     padding-bottom: 30px;
   }
   .seePtrue{
