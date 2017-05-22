@@ -13,10 +13,10 @@ h3{
   font-weight: 100;
 }
 h2{
-  font-size: 40px;
-  margin: 0;
-  letter-spacing: 4px;
-  font-weight: 100;
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
 }
 h4{
   letter-spacing: 3px;
@@ -28,7 +28,7 @@ p{
   font-weight: 100;
 }
 a{
-  color: #ff4949;
+  color: #88d317;
 }
 .hamburger{
   display: none;
@@ -61,16 +61,19 @@ a{
 .one{
   height: 650px;
   width: 100%;
-  color: #ff4949;
-  background: -webkit-linear-gradient(#0e1e38,black);;
-  background: linear-gradient(#0e1e38,black);
-  background: -moz-linear-gradient(#0e1e38,black);
+  color: #88d317;
+  background-image: url('../assets/pf-city-purple.jpg');
+  background-attachment: fixed;
+
+}
+.one-overlay{
+  background: rgba(110,54,103, .6);
 }
 .one .wrapper{
   text-align: center;
 }
 .text-wrapper{
-  margin-top: 250px;
+  margin-top: 180px;
 }
 .one h2{
 }
@@ -83,19 +86,16 @@ a{
   margin: 0px 50px;
 }
 .two{
-  background-image: url('../assets/pf-city-dark.jpg');
-  width: 100%;
-  padding: 140px 0px;
-  height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    /*background-repeat: no-repeat;*/
-    background-size: cover;
-    /*background: #485563;   fallback for old browsers */
-  /*  background: -webkit-linear-gradient( #0e1e38, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient( #0e1e38, #485563);*/
 
+  background: #1a0315;
+  width: 100%;
+  padding: 140px 0px 200px 0px;
+  height: 100%;
+
+}
+.two h2{
+  text-align: center;
+  color: white;
 }
 .two p{
     line-height: 46px;
@@ -112,6 +112,8 @@ a{
 .three  h1{
   text-align: center !important;
   padding: 0px 0px;
+}
+.three h3{
 }
 .work-section{
   padding: 50px;
@@ -143,6 +145,7 @@ a{
   clear: both;
   display: block;
   padding-bottom: 60px;
+  margin-top: 50px;
 }
 .apps-wrapper .app-img{
   opacity: 0;
@@ -157,25 +160,16 @@ a{
   opacity: 1 !important;
   transform: translate(0px, 0px) !important;
 }
-.apps-wrapper{
-
-}
 .number-two{
   margin-left: 0%;
 }
 .four{
   clear: both;
   padding: 130px 0px 0px 0px;
-  /*background-image: url('../assets/mountain.jpg');*/
   height: 900px;
-  /* Create the parallax scrolling effect */
-/*  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  background: linear-gradient(#141E30, #243B55);
+  background: #1a0315;
 }
-.four h1{
+.four h2{
   color: white;
   text-align: center;
     margin-bottom: 50px;
@@ -214,7 +208,7 @@ a{
 }
 .fa-mobile, .fa-code, .fa-cloud, .fa-cog{
   font-size: 70px;
-  color: #53efd6;
+  color: #88d317;
 }
 .fa-mobile{
   font-size: 122px;
@@ -250,7 +244,7 @@ a{
   opacity: 1;
 }
 .js-logo{
-  width: 34%;
+  width: 30%;
   margin-top: -5px;
   margin-bottom: 4px;
 }
@@ -266,10 +260,9 @@ a{
 }
 .five{
   padding: 60px 0px;
-  background: linear-gradient(#0e1e38,black);
-  background: -webkit-linear-gradient(#0e1e38,black);
-  background: -moz-linear-gradient(#0e1e38,black);
-  color: #ff4949;
+  background-image: url('../assets/mountain-green.jpg');
+  background-attachment: fixed;
+  /*color: #ff4949;*/
 }
 .five h2{
   float: left;
@@ -277,17 +270,19 @@ a{
 }
 .five .fa{
   margin-right: 10px;
-  color: ;
+  color: black;
   margin-bottom: 10px;
-  font-size: 20px
+  font-size: 24px
 }
 .five .fa-mobile{
-  font-size: 26px;
+  font-size: 30px;
   margin-left: 2px;
 }
 .five a{
-  color: #53efd6;
-  text-decoration: none
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 800;
 }
 .contact-col{
   width: 50%;
@@ -378,6 +373,9 @@ a{
   }
 }
 @media(max-width: 768px){
+  h2{
+    font-size: 48px;
+  }
   .wrapper{
     width: 90%;
     margin: 0 auto;

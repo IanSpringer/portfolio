@@ -45,7 +45,7 @@ class Three extends Component{
     return(
       <div className="section three">
         <div className="wrapper">
-          <h1>Work Porftolio</h1>
+          <h2>Work Porftolio</h2>
           <div className="sites-wrapper portfolio-col">
             <h3>Websites</h3>
               <a href="https://www.lujoliving.com/"><img className={"site-img site-img " + workFade[0]} src="https://st.hzcdn.com/simgs/d7030bda05c413b9_3-2567/lujoliving.jpg" /></a>

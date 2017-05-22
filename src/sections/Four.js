@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import jsLogo from "./js-logo-cropped.png";
+import jsLogo from "./js-logo-neon.png";
 import Square from "../components/Square.js"
 
 class Four extends Component{
@@ -120,7 +120,7 @@ class Four extends Component{
     return(
       <div className={this.props.className}>
         <div className="wrapper parallax">
-          <h1>Expertise</h1>
+          <h2>Expertise</h2>
           <div className="expert-wrapper">
           {attrs.map(function(obj, index){
             var myVar = index + 1;
