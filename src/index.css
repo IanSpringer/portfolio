@@ -107,7 +107,7 @@ a{
 }
 .three{
   margin: 0 auto;
-  padding: 130px 0px 70px 0px;
+  padding: 160px 0px 160px 0px;
 }
 .three  h1{
   text-align: center !important;
@@ -165,7 +165,7 @@ a{
 }
 .four{
   clear: both;
-  padding: 130px 0px 0px 0px;
+  padding: 160px 0px 160px 0px;
   height: 900px;
   background: #1a0315;
 }
