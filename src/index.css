@@ -85,7 +85,7 @@ a{
 .two{
   background-image: url('../assets/pf-city-dark.jpg');
   width: 100%;
-  padding: 180px 0px;
+  padding: 140px 0px;
   height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -100,9 +100,9 @@ a{
 .two p{
     line-height: 46px;
     color: white;
-    font-size: 22px;
+    font-size: 17px;
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 .three{
