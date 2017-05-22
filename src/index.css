@@ -377,7 +377,7 @@ a{
 }
 @media(max-width: 768px){
   h2{
-    font-size: 48px;
+    font-size: 44px;
   }
   .wrapper{
     width: 90%;
