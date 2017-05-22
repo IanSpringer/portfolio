@@ -270,15 +270,16 @@ a{
 }
 .five .fa{
   margin-right: 10px;
-  color: black;
+  color: #6e3667;
   margin-bottom: 10px;
-  font-size: 24px
+  font-size: 44px
 }
 .five .fa-mobile{
-  font-size: 30px;
+  font-size: 60px;
   margin-left: 2px;
 }
 .five a{
+  display: block;
   color: black;
   text-decoration: none;
   font-size: 22px;
@@ -287,6 +288,10 @@ a{
 .contact-col{
   list-style: none;
   color: #53efd6;
+}
+.contact-col li{
+  text-align: center;
+  margin-bottom: 30px;
 }
 .fade-away{
   opacity: 0;
@@ -447,21 +452,6 @@ a{
   .expandtrue{
     height: auto;
   }
-  /*.exper-col3.expandtrue{
-    position: absolute;
-    -webkit-transform: translate(-91%, 10%);
-    -ms-transform: translate(-91%, 10%);
-    transform: translate(-91%, 10%);
-    width: 95%;
-    padding-bottom: 60px;
-  }*/
-/*  .exper-col4.expandtrue{
-    position: absolute;
-    -webkit-transform: translate(-91%, 10%);
-    -ms-transform: translate(-91%, 10%);
-    transform: translate(-91%, 10%);
-    width: 95%;
-  }*/
   .five h2, .contact-col{
     float: none;
     width: 100%;
