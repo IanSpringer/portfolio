@@ -6,7 +6,7 @@ class One extends Component{
       <div className={this.props.className}>
           <div className="wrapper">
             <div className="text-wrapper">
-              <h2>Ian Springer</h2>
+              <h2><span className="thin-text">IAN</span><span className="bold-text">Springer</span></h2>
               <h4>Development/Design</h4>
             </div>
             <div className="social-wrapper">

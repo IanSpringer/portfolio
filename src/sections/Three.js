@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import Hairtamin from "../hairtamin-portfolio.png";
 import Stick from "../man-and-bubble.jpg"
 import rr from "../rr-portfolio.png"
-
+import roomer from "../roomerresume.png"
+import tempus from "../tempus.png"
+import lujo from "../lujo-portfolio.png"
+import uag from "../UAG.png"
 
 class Three extends Component{
   constructor(){
@@ -23,7 +26,7 @@ class Three extends Component{
   handleScroll() {
     var height = this.state.docHeight;
     var scrollToSites = height * .36;
-    var scrollToApps = height * .54;
+    var scrollToApps = height * .48;
     var array = this.state.workFade;
     console.log(array)
     if(window.scrollY > scrollToSites){
@@ -45,18 +48,40 @@ class Three extends Component{
     return(
       <div className="section three">
         <div className="wrapper">
-          <h2>Work Porftolio</h2>
-          <div className="sites-wrapper portfolio-col">
-            <h3>Websites</h3>
-              <a href="https://www.lujoliving.com/"><img className={"site-img site-img " + workFade[0]} src="https://st.hzcdn.com/simgs/d7030bda05c413b9_3-2567/lujoliving.jpg" /></a>
-              <a href="https://tempus-wood-watches.com/?gclid=Cj0KEQjwxPbHBRCdxJLF3qen3dYBEiQAMRyxSxYAVpIKu0W_bTAHL-OEIjcdaMc2ecWR3h4gqSoUZUUaAt2g8P8HAQ"><img className={"site-two site-img " + workFade[1]} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq6I94EQcmlpCWa5TnJ3DGbYMPKHc9x2qLRYRcm6U0bBkeiTD7" /></a>
-              <a href="http://crhivf.com"><img className={"site-three site-img " + workFade[2]} src="http://www.slicedbread.agency/br3adandbutt3r/crh-new/wp-content/themes/medical-clinic/img/new-crh.jpg"/></a>
-              <a href="http://hairtamin.com"><img className={"site-four site-img " + workFade[3]} src={Hairtamin}/></a>
+          <h2><span className="thin-text">WORK</span><span className="bold-text">Portfolio</span></h2>
+          <div className="portfolio-item">
+            <img src={roomer} className="roomerresume portfolio-img"/>
+            <div className="portfolio-text-wrapper">
+              <h3>Roomer Resume</h3>
+              <p>Roomer Resume is a mobile application that helps roommates throughout the country connect. Built on an MVC framework, this app allows users to signup, login, post currently available units or search for places to rent. Technologies used include PHP, MySQL, Javascript, Zend.</p>
+              <a href="http://roomerresume.com">Go to site</a>
+            </div>
           </div>
-          <div className="apps-wrapper portfolio-col">
-            <h3>Applications</h3>
-              <a href="http://stick2it.org"><img className={"app-img app-img " + workFade[4]} src={Stick} /></a>
-              <a href="http://roomerresume.com"><img className={"app-img app-img " + workFade[5]} src={rr} /></a>
+          <div className="portfolio-item">
+            <img src={tempus} className="roomerresume portfolio-img-right portfolio-img portfolio-img-mobile"/>
+            <div className="portfolio-text-wrapper text-wrapper-left">
+              <h3>Tempus Wood Watches</h3>
+              <p className="text-left">Tempus Wood Watches is a website that was built using the popular eCommerce platform Shopify. Displaying a slick and beautiful imagery, Tempus' new site has helped drive more traffic to the company and grow their business. Technologies used include CSS3, Liquid, jQuery</p>
+              <a href="http://tempus-wood-watches.com">Go to site</a>
+            </div>
+            <img src={tempus} className="roomerresume portfolio-img-right portfolio-img portfolio-img-desktop"/>
+          </div>
+          <div className="portfolio-item">
+            <img src={lujo} className="roomerresume portfolio-img"/>
+            <div className="portfolio-text-wrapper">
+              <h3>Lujo Living</h3>
+              <p>Lujo is a luxury furniture store located in New Zealnd. This website, which also utilized the Shopify platform, was inspired by the detailed designs from the client which was translated from Photoshop to the Web for a pixel-perfect experience. Technologies include CSS3, Liquid, jQuery</p>
+              <a href="https://www.lujoliving.com/">Go to site</a>
+            </div>
+          </div>
+          <div className="portfolio-item">
+            <img src={uag} className="roomerresume portfolio-img-right portfolio-img portfolio-img-mobile"/>
+            <div className="portfolio-text-wrapper text-wrapper-left">
+              <h3>Urban Armour Gear</h3>
+              <p className="text-left">Welcome to Urban Armour Gear, one of the country's most well-known phone and tablet protection companies. Build using Shopify, the rugged and durable feel of the site is both eye-catching yet fully responsive. Technologies used include CSS3, Liquid, jQuery.</p>
+              <a href="https://urbanarmorgear.com/">Go to site</a>
+            </div>
+            <img src={uag} className="roomerresume portfolio-img-right portfolio-img portfolio-img-desktop"/>
           </div>
         </div>
       </div>

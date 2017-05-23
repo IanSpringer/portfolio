@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import jsLogo from "./js-logo-neon.png";
+import jsLogo from "./js-logo-yellow.png";
 import Square from "../components/Square.js"
 
 class Four extends Component{
@@ -20,7 +20,7 @@ class Four extends Component{
       {
       id: 2,
       title: "Javascript",
-      text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. This site was built using React.js and Node.js",
+      text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, React, and Node.",
       icon: <img className="js-logo" src={jsLogo} />,
       reduced: false,
       expand: false,
@@ -82,7 +82,7 @@ class Four extends Component{
         {
         id: 2,
         title: "Javascript",
-        text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, and React. This site was built using React.js and Node.js",
+        text: "I can program clean, efficient JS to add functionality to any site or mobile app. I am experienced working with the many JS frameworks including jQuery, Angular, React, and Node.",
         icon: <img className="js-logo" src={jsLogo} />,
         reduced: false,
         expand: false,
@@ -120,19 +120,20 @@ class Four extends Component{
     return(
       <div className={this.props.className}>
         <div className="wrapper parallax">
-          <h2>Expertise</h2>
+          <h2><span className="thin-text">MY</span><span className="bold-text">Expertise</span></h2>
           <div className="expert-wrapper">
-          {attrs.map(function(obj, index){
-            var myVar = index + 1;
-            return <Square
-              key={index}
-              onClick={() => this.handleClick(myVar)}
-              onCloseClick={this.handleCloseClick}
-              title={obj.title}
-              text={obj.text}
-              icon={obj.icon}
-              className={obj.reduced ? "fade-away expert-col expert-col" + myVar: "expert-col exper-col" + myVar + " expand" + obj.expand} seeP={" seeP" + obj.seeP} />
-          }, this)}
+            {attrs.map(function(obj, index){
+              var myVar = index + 1;
+              return <Square
+                key={index}
+                onClick={() => this.handleClick(myVar)}
+                onCloseClick={this.handleCloseClick}
+                title={obj.title}
+                text={obj.text}
+                icon={obj.icon}
+                expand={obj.expand}
+                className={obj.reduced ? "fade-away expert-col expert-col" + myVar: "expert-col exper-col" + myVar} seeP={" seeP" + obj.seeP} />
+            }, this)}
           </div>
         </div>
       </div>
