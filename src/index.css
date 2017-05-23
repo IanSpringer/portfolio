@@ -445,6 +445,14 @@ a{
 .mobile-break{
   display: none;
 }
+@media (max-height: 900px){
+  .one{
+    height: 850px;
+  }
+  .text-wrapper{
+    margin-top: 380px;
+  }
+}
 @media(max-width: 1050px){
   .wrapper{
     width: 750px;
