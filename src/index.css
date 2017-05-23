@@ -554,3 +554,8 @@ a{
     display: block;
   }
 }
+@media (max-width: 380px){
+  .one h2{
+    font-size: 38px;
+  }
+}
