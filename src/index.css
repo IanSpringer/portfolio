@@ -445,7 +445,7 @@ a{
 .mobile-break{
   display: none;
 }
-@media (max-height: 800px){
+@media (min-height: 800px){
   .one{
     height: 850px;
   }
