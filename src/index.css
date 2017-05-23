@@ -557,6 +557,11 @@ a{
     display: block;
   }
 }
+@media (max-width: 480px){
+  .two p{
+    line-height: 34px;
+  }
+}
 @media (max-width: 380px){
   .one h2{
     font-size: 38px;
