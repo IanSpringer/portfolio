@@ -120,7 +120,7 @@ class Four extends Component{
     return(
       <div className={this.props.className}>
         <div className="wrapper parallax">
-          <h2><span className="thin-text">MY</span><span className="bold-text">Expertise</span></h2>
+          <h2><span className="thin-text">MY</span><br className="mobile-break" /><span className="bold-text">Expertise</span></h2>
           <div className="expert-wrapper">
             {attrs.map(function(obj, index){
               var myVar = index + 1;

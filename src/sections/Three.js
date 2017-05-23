@@ -48,7 +48,7 @@ class Three extends Component{
     return(
       <div className="section three">
         <div className="wrapper">
-          <h2><span className="thin-text">WORK</span><span className="bold-text">Portfolio</span></h2>
+          <h2><span className="thin-text">WORK</span><br className="mobile-break" /><span className="bold-text">Portfolio</span></h2>
           <div className="portfolio-item">
             <img src={roomer} className="roomerresume portfolio-img"/>
             <div className="portfolio-text-wrapper">

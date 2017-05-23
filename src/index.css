@@ -442,6 +442,9 @@ a{
 .portfolio-img-mobile{
   display: none;
 }
+.mobile-break{
+  display: none;
+}
 @media(max-width: 1050px){
   .wrapper{
     width: 750px;
@@ -557,5 +560,8 @@ a{
 @media (max-width: 380px){
   .one h2{
     font-size: 38px;
+  }
+  .mobile-break{
+    display: block
   }
 }
